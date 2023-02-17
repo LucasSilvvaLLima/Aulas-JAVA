@@ -30,6 +30,7 @@ public class CalculoMedia {
         Double media = (nota1 + nota2) / 2;
         
         System.out.println("Olá, "+nome+". Sua média foi de " + media);
+        
     }
     
 }

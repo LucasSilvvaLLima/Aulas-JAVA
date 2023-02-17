@@ -28,6 +28,7 @@ public class Idade {
         Integer idadeFutura = 2030 - nascimento;
         
         System.out.println("Em 2030 você tera " + idadeFutura + " anos");
+        
     }
     
 }
