@@ -9,8 +9,7 @@ public class Calculadora {
 
     public static void main(String[] args) {
         Scanner entrada = new Scanner(System.in);
-        Integer operacaoDesejada = 0;
-        Integer primeiroValor = 0, segundoValor = 0, resultado = 0;
+        Integer operacaoDesejada = 0, primeiroValor = 0, segundoValor = 0, resultado = 0;
         Double primeiroValorDouble = 0.0, segundoValorDouble = 0.0, resultadoDouble = 0.0;
         String enunciado = "", tabuada = "";
         do {
@@ -61,9 +60,11 @@ public class Calculadora {
                 default:
                     System.out.println("\nOPÇÃO INVALIDA, TENTE NOVAMENTE");
             }
+            
             if (operacaoDesejada.equals(0)) {
                 System.out.println("Até logo!");
             } else if (operacaoDesejada <= 6) {
+
                 for (int i = 1; i <= 10; i++) {
                     segundoValor = i;
                     segundoValorDouble = i + 0.0;
@@ -78,6 +79,7 @@ public class Calculadora {
                     } else if (operacaoDesejada.equals(6)) {
                         resultado = primeiroValor % segundoValor;
                     }
+                    
                     if (!operacaoDesejada.equals(3)) {
                         tabuada = String.format(enunciado, primeiroValor, segundoValor, resultado);
                         resultado = primeiroValor * resultado;
