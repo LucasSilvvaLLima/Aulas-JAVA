@@ -68,16 +68,24 @@ public class Calculadora {
                 for (int i = 1; i <= 10; i++) {
                     segundoValor = i;
                     segundoValorDouble = i + 0.0;
-                    if (operacaoDesejada.equals(1)) {
-                        resultado = primeiroValor + segundoValor;
-                    } else if (operacaoDesejada.equals(2)) {
-                        resultado = primeiroValor * segundoValor;
-                    } else if (operacaoDesejada.equals(3)) {
-                        resultadoDouble = primeiroValorDouble / segundoValorDouble;
-                    } else if (operacaoDesejada.equals(4)) {
-                        resultado = primeiroValor - segundoValor;
-                    } else if (operacaoDesejada.equals(6)) {
-                        resultado = primeiroValor % segundoValor;
+                    switch (operacaoDesejada) {
+                        case 1:
+                            resultado = primeiroValor + segundoValor;
+                            break;
+                        case 2:
+                            resultado = primeiroValor * segundoValor;
+                            break;
+                        case 3:
+                            resultadoDouble = primeiroValorDouble / segundoValorDouble;
+                            break;
+                        case 4:
+                            resultado = primeiroValor - segundoValor;
+                            break;
+                        case 6:
+                            resultado = primeiroValor % segundoValor;
+                            break;
+                        default:
+                            break;
                     }
                     
                     if (!operacaoDesejada.equals(3)) {
