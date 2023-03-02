@@ -37,8 +37,8 @@ public class Potencia {
         for(int i = 1; i < valorExpoente; i++){
             resultado *= valorBase; 
         }
-        
         System.out.println(String.format("%d elevado a %d = %d", valorBase, valorExpoente, resultado));
+        
     }
 
 }
