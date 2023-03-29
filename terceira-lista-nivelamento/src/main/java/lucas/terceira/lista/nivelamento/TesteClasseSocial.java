@@ -17,16 +17,24 @@ public class TesteClasseSocial {
      */
     public static void main(String[] args) {
         Scanner entrada = new Scanner(System.in);
-        ClasseSocial classe = new ClasseSocial();
+//        ClasseSocial classe = new ClasseSocial();;
+//        
+//        System.out.println("Digite sua renda: ");
+//        Double salario = entrada.nextDouble();
+//        
+//        Double qtdeSalariosMinimo = classe.qtdSalariosMinimo(salario);
+//        
+//        System.out.println(String.format("Você recebe aproximadamente %.1f salários-mínimos.", qtdeSalariosMinimo));
+//        System.out.println(classe.classeSocialUsuario(salario));
         
-        System.out.println("Digite sua renda: ");
-        Double salario = entrada.nextDouble();
+        String n1 = "Lucas";
+        String n2 = entrada.nextLine();
         
-        Double qtdeSalariosMinimo = classe.qtdeSalariosMinimo(salario);
-        
-        System.out.println(String.format("Você recebe aproximadamente %.1f salários-mínimos.", qtdeSalariosMinimo));
-        System.out.println(classe.classeSocialUsuario(salario));
-        
+        if(n1 == n2){
+            System.out.println("Igual");
+        }else{
+            System.out.println("Diferente");
+        }
     }
     
 }

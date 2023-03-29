@@ -9,14 +9,14 @@ package lucas.terceira.lista.nivelamento;
  */
 public class ClasseSocial {
 
-    Double qtdeSalariosMinimo(Double salario) {
+    Double qtdSalariosMinimo(Double salario) {
         Double salarioMinimo = 1045.00;
         Double qtdSalariosMinimo = salario / salarioMinimo;
         return qtdSalariosMinimo;
     }
 
     String classeSocialUsuario(Double salario) {
-        Double qtdSalarioMinimo = qtdeSalariosMinimo(salario);
+        Double qtdSalarioMinimo = qtdSalariosMinimo(salario);
         Boolean classeE = qtdSalarioMinimo <= 2;
         Boolean classeD = qtdSalarioMinimo > 2 && qtdSalarioMinimo <= 4;
         Boolean classeC = qtdSalarioMinimo > 4 && qtdSalarioMinimo <= 10;
